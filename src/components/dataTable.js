@@ -2,9 +2,10 @@
 import React from "react";
 
 function DataTable(props) {
-    return(
-        <table className="table ">
-            <thead>
+    return( 
+        <div className = "table-responsive">
+        <table className = "table table-striped table-dark ">
+            <thead className = "">
                 <tr>
                     <th scope="col">Name</th>
                     <th scope="col">Image</th>
@@ -13,7 +14,7 @@ function DataTable(props) {
                     <th scope="col">DOB</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody >
                 {props.filteredResults.map(result =>(
                 <tr>
                     <td>{result.name.first} {result.name.last}</td>
@@ -27,6 +28,7 @@ function DataTable(props) {
                 ))}
             </tbody>
         </table>
+        </div>
     )
 
 }

@@ -13,6 +13,7 @@
   }
 }
 
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -34,5 +35,15 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+@media (max-width:600px){
+  .table{
+    font-size: small;
+  }
+}
+@media (max-width:500px){
+  .table{
+    font-size: 8px;
   }
 }
