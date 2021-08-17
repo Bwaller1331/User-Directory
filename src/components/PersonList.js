@@ -176,10 +176,10 @@ class PersonList extends Component {
                 let dobA = a.dob.date.slice(0,10);
                 let dobB = b.dob.date.slice(0,10);
                 if (dobA < dobB ) {
-                    return 1;
+                    return -1;
                 }
                 if (dobA > dobB) {
-                    return -1;
+                    return 1;
                 }
                     return 0;
             })
@@ -212,17 +212,17 @@ class PersonList extends Component {
             <div>
                 <div className="input-group mb-3">
                     <span className="input-group-text" id="basic-addon1">Search</span>
-                    <input value={this.state.search} type="text" className="form-control" placeholder="Search for a user or Sort current users" name='search' onChange={this.handleInputChange} />
+                    <input value={this.state.search} type="text" className="form-control" placeholder="Search for a user by Name" name='search' onChange={this.handleInputChange} />
                     <button className="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Sort</button>
-                    <ul class="dropdown-menu dropdown-menu-end">
-                        <li><a onClick={this.handleSort} name="firstNameAsc" class="dropdown-item" href="#">First Name (a-z)</a></li>
-                        <li><a onClick={this.handleSort} name="firstNameDesc" class="dropdown-item" href="#">First Name (z-a)</a></li>
-                        <li><a onClick={this.handleSort} name="lastNameAsc" class="dropdown-item" href="#">Last Name (a-z)</a></li>
-                        <li><a onClick={this.handleSort} name="lastNameDesc" class="dropdown-item" href="#">Last Name (z-a)</a></li>
-                        <li><a onClick={this.handleSort} name="emailAsc" class="dropdown-item" href="#">Email (a-z)</a></li>
-                        <li><a onClick={this.handleSort} name="emailDesc" class="dropdown-item" href="#">Email (z-a)</a></li>
-                        <li><a onClick={this.handleSort} name="dobAsc" class="dropdown-item" href="#">DOB (Ascending)</a></li>
-                        <li><a onClick={this.handleSort} name="dobDesc" class="dropdown-item" href="#">DOB (Descending)</a></li>
+                    <ul className="dropdown-menu dropdown-menu-end">
+                        <li><a onClick={this.handleSort} name="firstNameAsc" className="dropdown-item" href="#">First Name (a-z)</a></li>
+                        <li><a onClick={this.handleSort} name="firstNameDesc" className="dropdown-item" href="#">First Name (z-a)</a></li>
+                        <li><a onClick={this.handleSort} name="lastNameAsc" className="dropdown-item" href="#">Last Name (a-z)</a></li>
+                        <li><a onClick={this.handleSort} name="lastNameDesc" className="dropdown-item" href="#">Last Name (z-a)</a></li>
+                        <li><a onClick={this.handleSort} name="emailAsc" className="dropdown-item" href="#">Email (a-z)</a></li>
+                        <li><a onClick={this.handleSort} name="emailDesc" className="dropdown-item" href="#">Email (z-a)</a></li>
+                        <li><a onClick={this.handleSort} name="dobAsc" className="dropdown-item" href="#">DOB (Ascending)</a></li>
+                        <li><a onClick={this.handleSort} name="dobDesc" className="dropdown-item" href="#">DOB (Descending)</a></li>
                     </ul>
                 </div>
                
