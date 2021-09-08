@@ -22,8 +22,8 @@ function DataTable(props) {
                         <img src={result.picture.thumbnail} alt="user"></img>
                     </th>
                     <td>{result.phone}</td>
-                    <td>{result.email}</td>
-                    <td>{result.dob.date.slice(0,10)}</td>
+                    <td className="emailCol">{result.email}</td>
+                    <td className="dobCol">{result.dob.date.slice(0,10)}</td>
                 </tr>
                 ))}
             </tbody>

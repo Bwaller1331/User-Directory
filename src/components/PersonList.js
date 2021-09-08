@@ -211,7 +211,7 @@ class PersonList extends Component {
         return (
             <div>
                 <div className="dataTable input-group mb-3">
-                    <span className="input-group-text" id="basic-addon1">Search</span>
+                    <span className="input-group-text text-light" id="basic-addon1">Search</span>
                     <input value={this.state.search} type="text" className="form-control" placeholder="Search for a user by name " name='search' onChange={this.handleInputChange} />
                     <button className="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Sort</button>
                     <ul className="dropdown-menu dropdown-menu-end">
