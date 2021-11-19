@@ -20,11 +20,10 @@ This app is a User-Directory that is organizing data from the Randomuser.me API.
 ## Deployed Site
 
 <div align="center">
-    <a href="https://user-directory-homework-123.herokuapp.com/">Click Here to view the Deployed App With Heroku
-    </a>
+    <a href="https://user-directory-homework-123.herokuapp.com/">Click Here to view the Deployed App With Heroku</a>
 </div>
 
-- ![Home](src\assets\user-directory-screenshot-home.png)
+- ![Home](src/assets/user-directory-screenshot-home.png)
 
 
 ## Installation 
